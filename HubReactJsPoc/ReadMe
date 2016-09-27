@@ -1,0 +1,5 @@
+Project Setup:
+npm install -g gulp bower nodemon
+
+From project root directory:
+npm install --save browserify reactify vinyl-source-stream gulp react react-dom express guid
