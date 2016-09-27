@@ -1,0 +1,29 @@
+{
+  "name": "hubreatjspoc",
+  "version": "1.0.0",
+  "description": "POC for hub using readt",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meidan-zemer/reactPOC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meidan-zemer/reactPOC/issues"
+  },
+  "homepage": "https://github.com/meidan-zemer/reactPOC#readme",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "express": "^4.14.0",
+    "guid": "0.0.12",
+    "gulp": "^3.9.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

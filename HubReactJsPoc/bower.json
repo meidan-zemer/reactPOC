@@ -1,0 +1,18 @@
+{
+  "name": "hubreatjspoc",
+  "description": "POC for hub using readt",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/meidan-zemer/reactPOC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css": "^3.3.6",
+    "jquery": "^3.1.1"
+  }
+}
