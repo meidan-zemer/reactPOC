@@ -1,0 +1,77 @@
+{
+	"sceneName": "Opening",
+	"edegs": [{
+		"destination": {
+			"sceneName": "World of Content",
+			"edegs": [{
+				"destination": {
+					"sceneName": "Content Rec",
+					"edegs": [{
+						"sceneName": "App Intro",
+						"edegs": [{
+							"destination": {
+								"sceneName": "TV Go",
+								"edegs": [{
+									"destination": {
+										"sceneName": "Wifi Hotspots",
+										"edegs": [{
+											"destination": {
+												"sceneName": "Wifi App",
+												"edegs": [{
+													"destination": {
+														"sceneName": "My Account",
+														"edegs": [{
+																"destination": {
+																	"sceneName": "CTA"
+																}
+															}
+
+														]
+													}
+												}]
+											},
+											"conditions": [{
+												"variable": "No TV"
+											}]
+										}]
+									},
+									"conditions": [{
+										"variable": "X1 on legacy"
+									}, {
+										"variable": "Upper tier Internat"
+									}]
+								}, {
+									"destination": {
+										"sceneName": "Aports App"
+									},
+									"conditions": [{
+										"variable": "X1 Only"
+									}, {
+										"variable": "Viewing History Sports"
+									}]
+								}, {
+									"destination": {
+										"sceneName": "Kid Zone"
+									},
+									"conditions": [{
+										"variable": "X1 Only"
+									}, {
+										"variable": "Viewing History Kids"
+									}]
+								}]
+
+							},
+							"conditions": null
+						}]
+					}]
+				},
+				"conditions": [{
+					"variable": "X1"
+				}]
+			}]
+		},
+		"conditions": [{
+			"variable": "TV/TV Internet"
+		}]
+	}]
+}
