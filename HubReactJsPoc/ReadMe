@@ -1,6 +1,7 @@
 Project Setup:
-npm install -g gulp bower nodemon
+npm install
+bower install
 
-From project root directory:
-npm install --save browserify reactify vinyl-source-stream gulp react react-dom express guid
-bower install --save bootstrap-css
+To run:
+gulp
+nodemon ./server/server.js
