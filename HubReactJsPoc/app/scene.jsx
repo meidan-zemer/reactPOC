@@ -5,7 +5,7 @@ var Scene = React.createClass({
    render:function(){
        return(
            <div className="scene">
-			 <h3>{this.props.scene.sceneName}</h3>
+			 <h3 className="text-center">{this.props.scene.sceneName}</h3>
            </div>
        )
    } 

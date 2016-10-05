@@ -9,7 +9,6 @@ var App = React.createClass({
 	   var result = [];	   
 	   var sceneQueue = [this.props.scene];
 	   var i=0;
-	   debugger;
 	   while(sceneQueue.length > 0){
 		   var currentScene = sceneQueue.shift(1);
 		   if(!currentScene)

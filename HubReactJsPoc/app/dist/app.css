@@ -4,8 +4,16 @@
 .scene {
 	background:#fff;
 	border:solid;
+	height:110px;
+	margin-top:5px;
+	display:table;
+	min-width:200px;
 }
 
+.scene h3 {
+    position:relative;
+    top:-18px;
+}
 .edge {
 	
 }
