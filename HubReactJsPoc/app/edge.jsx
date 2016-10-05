@@ -7,8 +7,8 @@ var Edge = React.createClass({
        return(
            <div className="edge">
 		   {			   
-			   this.props.edge && this.props.edge.conditions ? this.props.edge.conditions.map(function(c){return <h3 key={i++}>{c.variable + "+"}</h3>;}) : null
-		   }		   
+			   this.props.edge && this.props.edge.conditions ? this.props.edge.conditions.map(function(c){return <span className="condition" key={i++}>{c.variable + "+"}</span>;}) : null
+		   }
            </div>
        )
    } 
