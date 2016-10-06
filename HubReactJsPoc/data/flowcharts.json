@@ -1,27 +1,27 @@
 {
 	"sceneName": "Opening",
-	"edegs": [{
+	"edeges": [{
 		"destination": {
 			"sceneName": "World of Content",
-			"edegs": [{
+			"edeges": [{
 				"destination": {
 					"sceneName": "Content Rec",
-					"edegs": [{
+					"edeges": [{
 						"destination": {
 							"sceneName": "App Intro",
-							"edegs": [{
+							"edeges": [{
 								"destination": {
 									"sceneName": "TV Go",
-									"edegs": [{
+									"edeges": [{
 										"destination": {
 											"sceneName": "Wifi Hotspots",
-											"edegs": [{
+											"edeges": [{
 												"destination": {
 													"sceneName": "Wifi App",
-													"edegs": [{
+													"edeges": [{
 														"destination": {
 															"sceneName": "My Account",
-															"edegs": [{
+															"edeges": [{
 																	"destination": {
 																		"sceneName": "CTA"
 																	}

@@ -5,8 +5,15 @@ var Scene = require("./scene.jsx");
 var Edge = require("./edge.jsx");
 
 var App = React.createClass({
-   render:function(){	  	   
-	   var result = [];	   
+    render:function(){
+        var i=0;
+       return (<ul>
+                    <Scene key={i++} scene={this.props.scene}/>
+             </ul>)
+    },
+
+   render1:function(){
+	   var result = [];
 	   var sceneQueue = [this.props.scene];
 	   var i=0;
 	   while(sceneQueue.length > 0){
@@ -17,18 +24,18 @@ var App = React.createClass({
 		   if(currentScene.edegs){
 			   sceneQueue = sceneQueue.concat(currentScene.edegs.map(function(e){
 				   result.push(<Edge edge={e} key={i++}/>);
-				   return e.destination;			   
-			   }));			   
+				   return e.destination;
+			   }));
 		   }
-		   
+
 	   }
-	   
+
        return(
            <div className="app">
 		   {result}
            </div>
        )
-   } 
+   }
 });
 
 $.get("flowcharts.json", function(result){
