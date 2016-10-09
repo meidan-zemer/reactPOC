@@ -5,40 +5,47 @@ var Scene = require("./scene.jsx");
 var Edge = require("./edge.jsx");
 
 var App = React.createClass({
-    render:function(){
-        var i=0;
-       return (<ul>
-                    <Scene key={i++} scene={this.props.scene}/>
-             </ul>)
+
+    getInitialState:function(){
+        return {
+                scene:{}
+            };
+
     },
 
-   render1:function(){
-	   var result = [];
-	   var sceneQueue = [this.props.scene];
-	   var i=0;
-	   while(sceneQueue.length > 0){
-		   var currentScene = sceneQueue.shift(1);
-		   if(!currentScene)
-			   continue;
-		   result.push(<Scene scene={currentScene} key={i++}/>);
-		   if(currentScene.edegs){
-			   sceneQueue = sceneQueue.concat(currentScene.edegs.map(function(e){
-				   result.push(<Edge edge={e} key={i++}/>);
-				   return e.destination;
-			   }));
-		   }
+    updateRootScene:function(scene){
+        this.setState({scene:scene});
+    },
 
-	   }
+    addChild:function(name,parentScene){
+        parentScene.edges.push({
+            destination:{
+                sceneName:name
+            }
+        });
 
-       return(
-           <div className="app">
-		   {result}
-           </div>
-       )
-   }
+       this.forceUpdate();
+    },
+
+    getCurrentTree:function(){
+        return this.state.scene;
+    },
+
+    componentDidMount: function(){
+
+        $.get(JSONLocation ? JSONLocation : "flowcharts.json", this.updateRootScene);
+    },
+
+    render:function(){
+            var i=0;
+            return (
+                    <ul>
+                        <Scene key={i++} scene={this.state.scene} addChildCB={this.addChild}/>
+                    </ul>
+                   )
+        }
 });
 
-$.get("flowcharts.json", function(result){
-	ReactDom.render(<App scene={result}/>, document.getElementById("container"));
-});
 
+
+ReactDom.render(<App/>, document.getElementById("container"));
