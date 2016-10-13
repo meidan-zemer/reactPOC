@@ -6,8 +6,7 @@ var source = require("vinyl-source-stream");
 
 gulp.task("bundle", function () {
 	var files =[
-		"./app/app.jsx",
-		"./app/scene.jsx"
+		"./app/index.jsx"
 	];
 	
     return browserify({

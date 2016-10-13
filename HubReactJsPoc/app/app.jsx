@@ -1,23 +1,19 @@
 var React = require("react");
-var ReactDom = require("react-dom");
-var $ =  require("./lib/jquery/dist/jquery.min.js");
 var Scene = require("./scene.jsx");
-var Edge = require("./edge.jsx");
 
 var App = React.createClass({
 
     getInitialState:function(){
         return {
-                scene:{}
+                scene:this.props.scene
             };
 
     },
 
-    updateRootScene:function(scene){
-        this.setState({scene:scene});
-    },
-
     addChild:function(name,parentScene){
+        if(!parentScene.edges)
+            parentScene.edges=[];
+
         parentScene.edges.push({
             destination:{
                 sceneName:name
@@ -27,25 +23,25 @@ var App = React.createClass({
        this.forceUpdate();
     },
 
+    downloadJson:function(){
+        document.location = 'data:Application/octet-stream,' +
+                                 encodeURIComponent(JSON.stringify(this.getCurrentTree()));
+    },
+
     getCurrentTree:function(){
         return this.state.scene;
     },
 
-    componentDidMount: function(){
-
-        $.get(JSONLocation ? JSONLocation : "flowcharts.json", this.updateRootScene);
-    },
-
     render:function(){
             var i=0;
-            return (
-                    <ul>
-                        <Scene key={i++} scene={this.state.scene} addChildCB={this.addChild}/>
-                    </ul>
+            return (<div>
+                        <input type="button" value="Download JSON" onClick={this.downloadJson}/>
+                        <ul>
+                            <Scene key={i++} scene={this.state.scene} addChildCB={this.addChild}/>
+                        </ul>
+                    </div>
                    )
         }
 });
 
-
-
-ReactDom.render(<App/>, document.getElementById("container"));
+module.exports = App;

@@ -1,0 +1,202 @@
+exports[`test Render App 1`] = `
+<div>
+  <input
+    onClick={[Function]}
+    type="button"
+    value="Download JSON" />
+  <ul>
+    <li
+      className="scene">
+      <span
+        className="node-management">
+        <a
+          className="add-child"
+          href="javascript: void(0)"
+          onClick={[Function]}>
+          +
+        </a>
+      </span>
+      <span
+        className="scene-title">
+        Opening
+      </span>
+      <ul>
+        <li
+          className="scene">
+          <span
+            className="node-management">
+            <a
+              className="add-child"
+              href="javascript: void(0)"
+              onClick={[Function]}>
+              +
+            </a>
+          </span>
+          <span
+            className="scene-title">
+            World of Content
+          </span>
+          <ul>
+            <li
+              className="scene">
+              <span
+                className="node-management">
+                <a
+                  className="add-child"
+                  href="javascript: void(0)"
+                  onClick={[Function]}>
+                  +
+                </a>
+              </span>
+              <span
+                className="scene-title">
+                Content Rec
+              </span>
+              <ul>
+                <li
+                  className="scene">
+                  <span
+                    className="node-management">
+                    <a
+                      className="add-child"
+                      href="javascript: void(0)"
+                      onClick={[Function]}>
+                      +
+                    </a>
+                  </span>
+                  <span
+                    className="scene-title">
+                    App Intro
+                  </span>
+                  <ul>
+                    <li
+                      className="scene">
+                      <span
+                        className="node-management">
+                        <a
+                          className="add-child"
+                          href="javascript: void(0)"
+                          onClick={[Function]}>
+                          +
+                        </a>
+                      </span>
+                      <span
+                        className="scene-title">
+                        TV Go
+                      </span>
+                      <ul>
+                        <li
+                          className="scene">
+                          <span
+                            className="node-management">
+                            <a
+                              className="add-child"
+                              href="javascript: void(0)"
+                              onClick={[Function]}>
+                              +
+                            </a>
+                          </span>
+                          <span
+                            className="scene-title">
+                            Wifi Hotspots
+                          </span>
+                          <ul>
+                            <li
+                              className="scene">
+                              <span
+                                className="node-management">
+                                <a
+                                  className="add-child"
+                                  href="javascript: void(0)"
+                                  onClick={[Function]}>
+                                  +
+                                </a>
+                              </span>
+                              <span
+                                className="scene-title">
+                                Wifi App
+                              </span>
+                              <ul>
+                                <li
+                                  className="scene">
+                                  <span
+                                    className="node-management">
+                                    <a
+                                      className="add-child"
+                                      href="javascript: void(0)"
+                                      onClick={[Function]}>
+                                      +
+                                    </a>
+                                  </span>
+                                  <span
+                                    className="scene-title">
+                                    My Account
+                                  </span>
+                                  <ul>
+                                    <li
+                                      className="scene">
+                                      <span
+                                        className="node-management">
+                                        <a
+                                          className="add-child"
+                                          href="javascript: void(0)"
+                                          onClick={[Function]}>
+                                          +
+                                        </a>
+                                      </span>
+                                      <span
+                                        className="scene-title">
+                                        CTA
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          className="scene">
+                          <span
+                            className="node-management">
+                            <a
+                              className="add-child"
+                              href="javascript: void(0)"
+                              onClick={[Function]}>
+                              +
+                            </a>
+                          </span>
+                          <span
+                            className="scene-title">
+                            Aports App
+                          </span>
+                        </li>
+                        <li
+                          className="scene">
+                          <span
+                            className="node-management">
+                            <a
+                              className="add-child"
+                              href="javascript: void(0)"
+                              onClick={[Function]}>
+                              +
+                            </a>
+                          </span>
+                          <span
+                            className="scene-title">
+                            Kid Zone
+                          </span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;
