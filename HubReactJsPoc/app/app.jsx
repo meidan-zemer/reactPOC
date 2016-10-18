@@ -23,6 +23,7 @@ var App = React.createClass({
        this.forceUpdate();
     },
 
+
     downloadJson:function(){
         document.location = 'data:Application/octet-stream,' +
                                  encodeURIComponent(JSON.stringify(this.getCurrentTree()));

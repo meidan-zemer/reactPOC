@@ -13,6 +13,10 @@ var Scene = React.createClass({
             this.props.addChildCB(name,this.props.scene);
         },
 
+        getSceneName: function(){
+            return this.props.scene.sceneName;
+        },
+
         render:function(){
             var i=0;
             var _that = this;
